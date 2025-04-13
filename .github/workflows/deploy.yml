@@ -14,10 +14,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Lint HTML files
-        uses: dhanst/htmlhint-action@v1
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          files: "**/*.html"
+          node-version: 18
+
+      - name: Install HTMLHint
+        run: npm install -g htmlhint
+
+      - name: Run HTMLHint
+        run: htmlhint ./**/*.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
