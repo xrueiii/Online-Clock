@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install ESLint
+      - name: Install ESLint(v9)
         run: npm install eslint
 
       - name: Run ESLint on script.js
