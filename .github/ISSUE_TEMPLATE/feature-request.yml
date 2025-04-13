@@ -1,0 +1,44 @@
+name: 💡 Feature Request
+description: Suggest a new feature or improvement
+title: "[Feature] "
+labels: [enhancement]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in improving this project! 🙌  
+        Please describe the feature you'd like to see and how it would be useful.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: What is the feature or idea you'd like to suggest?
+      placeholder: e.g. Add dark mode toggle
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: How would this feature help users or solve a problem?
+      placeholder: It would be easier to use at night, and look cooler too!
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Possible Implementation (Optional)
+      description: If you have ideas on how to implement it, share them here
+      placeholder: Use a toggle button to switch between dark and light styles
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Info
+      description: Screenshots, links, or anything else you'd like to share
+      placeholder: Add a mockup, design idea, or related issue reference

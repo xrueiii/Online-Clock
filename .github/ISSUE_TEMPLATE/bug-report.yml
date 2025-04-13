@@ -1,0 +1,54 @@
+name: 🐛 Bug Report
+description: Report a bug or unexpected behavior
+title: "[Bug] "
+labels: [bug]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug! 🙏  
+        Please fill out the following details to help us reproduce and fix the issue.
+
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: Your browser, OS, device, etc.
+      placeholder: e.g. Windows 11 + Chrome 123
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Describe how we can reproduce the issue
+      placeholder: |
+        1. Go to the homepage
+        2. Click on "Start"
+        3. The page freezes
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: The clock should display the current time and update every second
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: The time display froze and stopped updating
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshots / Additional Info (optional)
+      description: Paste any relevant screenshots or extra context here
+      placeholder: Paste screenshots, error logs, or any helpful info
