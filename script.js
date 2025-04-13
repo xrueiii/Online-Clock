@@ -13,7 +13,7 @@ function updateClock() {
         hours = hours % 12 || 12; // 12-hour format
     }
 
-    document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}${period}`;
+    document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
   }
   
   setInterval(updateClock, 1000);
@@ -22,3 +22,5 @@ function updateClock() {
   document.getElementById('toggleFormat').addEventListener('click', () => {
     is24Hour = !is24Hour;
   });
+
+  const somethingUnused = 123
