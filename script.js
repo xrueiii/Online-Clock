@@ -13,7 +13,7 @@ function updateClock() {
         hours = hours % 12 || 12; // 12-hour format
     }
 
-    document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}${period}`;
+    document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
   }
   
   setInterval(updateClock, 1000);
