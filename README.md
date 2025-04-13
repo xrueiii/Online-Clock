@@ -11,7 +11,7 @@ Online-clock/
 ├── index.html
 ├── style.css
 ├── script.js
-├── eslint.config.js   
+├── eslint.config.cjs   
 └── .github/
     ├── ISSUE_TEMPLATE/
     |    ├── bug-report.yml 
