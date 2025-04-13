@@ -22,3 +22,5 @@ function updateClock() {
   document.getElementById('toggleFormat').addEventListener('click', () => {
     is24Hour = !is24Hour;
   });
+
+  const somethingUnused = 123
